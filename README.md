@@ -4,7 +4,7 @@ Skeleton for the multi-platform 2D interaction engine
 ## Usage
 It's strongly recommended to use [nvm](https://github.com/nvm-sh/nvm) to manage Node.js versions and [VS Code](https://code.visualstudio.com) for development:
 
-Clone this repository and install dependencies with:
+Clone/fork this repository and install dependencies with:
 ```shell
 npm install
 ```
