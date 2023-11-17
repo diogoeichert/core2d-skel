@@ -1,0 +1,61 @@
+{
+	"name": "core2d-skel",
+	"productName": "My App",
+	"description": "Skeleton for the multi-platform 2D interaction engine",
+	"version": "1.0.0",
+	"private": true,
+	"main": "main.js",
+	"scripts": {
+		"build": "npm test && electron-builder -lmw",
+		"build:lin": "npm test && electron-builder -l",
+		"build:mac": "npm test && electron-builder -m",
+		"build:win": "npm test && electron-builder -n",
+		"pack": "electron-builder --dir",
+		"postinstall": "electron-builder install-app-deps",
+		"prezip": "npm install",
+		"start": "electron .",
+		"test": "eslint --fix .",
+		"zip": "mkdir -p dist && zip -r - assets node_modules/core2d index.html app.mjs > dist/${PWD##*/}.zip"
+	},
+	"author": "Diogo Eichert",
+	"homepage": "app.author.com",
+	"devDependencies": {
+		"electron": "^13.2.1",
+		"electron-builder": "^23.0.2",
+		"eslint": "^7.32.0",
+		"eslint-config-classic": "^1.2.1"
+	},
+	"build": {
+		"appId": "com.author.app",
+		"files": [
+			"assets/**/*",
+			"index.html",
+			"*.js",
+			"*.mjs",
+			"node_modules/**/*",
+			"package.json"
+		],
+		"directories": {
+			"buildResources": "resources"
+		},
+		"publish": null,
+		"linux": {
+			"category": "App",
+			"target": "AppImage"
+		},
+		"mac": {
+			"category": "public.app-category.apps",
+			"icon": "assets/icon.icns",
+			"identity": null,
+			"target": "dmg"
+		},
+		"win": {
+			"artifactName": "${productName}-${version}.${ext}",
+			"icon": "assets/icon.ico",
+			"target": "nsis"
+		}
+	},
+	"dependencies": {
+		"core2d": "^2.0.0"
+	}
+}
