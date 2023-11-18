@@ -1,5 +1,5 @@
 # core2d-skel
-Skeleton for the multi-platform 2D interaction engine
+Skeleton for [core2d](https://github.com/diogoeichert/core2d), the multi-platform 2D interaction engine
 
 ## Usage
 It's strongly recommended to use [nvm](https://github.com/nvm-sh/nvm) to manage Node.js versions and [VS Code](https://code.visualstudio.com) for development:
