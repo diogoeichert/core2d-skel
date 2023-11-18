@@ -1,11 +1,11 @@
 "use strict";
 
-import { Color } from "../node_modules/core2d/src/Color.mjs";
-import { Command } from "../node_modules/core2d/src/Command.mjs";
-import { ControllableSprite } from "../node_modules/core2d/src/plugin/ControllableSprite.mjs";
-import { Core2D } from "../node_modules/core2d/src/Core2D.mjs";
-import { Starfield } from "../node_modules/core2d/src/plugin/Starfield.mjs";
-import { TextSprite } from "../node_modules/core2d/src/TextSprite.mjs";
+import { Color } from "./node_modules/core2d/src/Color.mjs";
+import { Command } from "./node_modules/core2d/src/Command.mjs";
+import { ControllableSprite } from "./node_modules/core2d/src/plugin/ControllableSprite.mjs";
+import { Core2D } from "./node_modules/core2d/src/Core2D.mjs";
+import { Starfield } from "./node_modules/core2d/src/plugin/Starfield.mjs";
+import { TextSprite } from "./node_modules/core2d/src/TextSprite.mjs";
 
 let scene = Core2D.scene()
 	.setColor(Color.Navy);
