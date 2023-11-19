@@ -13,6 +13,8 @@ npm install
 Open VS Code and accept the plugin suggestion that will install the Live Preview plugin to make it easier to test your app locally. Right-click the `index.html` file and select "Show Preview" to view the app.
 
 ### Building
+The app can be built as an Electron app (for desktop operating systems) or as a ZIP file, so that it can be deployed as a mobile or web application.
+
 #### As Electron app
 ```shell
 npm run build # all supported platforms
