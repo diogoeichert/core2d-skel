@@ -23,7 +23,10 @@ function createWindow(apps) {
 		height: WINDOW_SIZE.height,
 	});
 
-	// browserWindow.webContents.openDevTools(); // for debugging
+	if (process.env.DEBUG) {
+		browserWindow.webContents.openDevTools();
+	}
+
 	browserWindow.loadFile("index.html", {query: {apps: JSON.stringify(apps)}});
 }
 

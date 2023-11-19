@@ -31,6 +31,7 @@ npm run build:mac
 ```shell
 npm run build:win
 ```
+Binaries are created under the `dist/` folder.
 
 #### As ZIP file
 ```shell
@@ -38,7 +39,16 @@ npm run zip
 ```
 
 ### Testing
-The electron apps can be tested on each supported platform directly. Binaries are produced under the `dist/` folder.
+The electron app can be tested with:
+```shell
+npm start
+```
+
+#### Debugging
+You can also open the electron app with the dev console with:
+```shell
+DEBUG=1 npm start
+```
 
 For the web (ZIP) version, please note that modern JS apps cannot be run locally by simply opening the `index.html` file because of [CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS). Browsers will need a web server to load the contents of the ZIP file.
 
